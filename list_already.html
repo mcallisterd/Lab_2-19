@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul id="list">
+    <li>Horse</li>
+    <li>Dog</li>
+    <li>Caterpillar</li>
+    <li>Goat</li>
+    <button onclick="change();">Click me!</button>
+    </ul>
+  </body>
+  <script type="text/javascript">
+    var change = function(){
+      var animals_list = document.getElementsByTagName("li");
+      animals_list.forEach(function(d){d.innerHTML = d.length;})
+    }
+  </script>
+</html>
