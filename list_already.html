@@ -17,7 +17,10 @@
     var change = function(){
       var animals_list = document.getElementsByTagName("li");
       console.log(animals_list)
-      animals_list.forEach(function(d){d.innerHTML = d.length;})
+      for(var x=0;x<animals_list.length;x++){
+        animals_list[x].innerHTML = animals_list[x].length;
+      }
+      //animals_list.forEach(function(d){d.innerHTML = d.length;})
     }
   </script>
 </html>
