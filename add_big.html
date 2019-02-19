@@ -16,9 +16,8 @@
   <script type="text/javascript">
     var change = function(){
       var animals_list = document.getElementsByTagName("li");
-      console.log(animals_list)
       for(var x=0;x<animals_list.length;x++){
-        animals_list[x].innerHTML = animals_list[x].innerHTML.length;
+        animals_list[x].innerHTML = "big "+animals_list[x].innerHTML;
       }
     }
   </script>
